@@ -1,0 +1,161 @@
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.container {
+  display: flex;
+  margin: 20px;
+}
+
+.container > div {
+  padding: 10px;
+  flex-grow: 1;
+  border: 2px solid rgb(155, 152, 152);
+  min-height: 20px;
+}
+.categories > div, .products > div {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.details-text > p {
+  margin-top: 0;
+}
+div[data-category], div[data-product] {
+  cursor: pointer;
+}
+button {
+  padding: 10px 20px;
+  background: rgb(230, 84, 84);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 20px;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+button:hover {
+  background: rgb(202, 46, 46);
+}
+.result {
+  width: 50%;
+  margin: 0 auto;
+}
+.result button {
+  margin-left: 170px;
+}
+.result p {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.thanks {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  color: rgba(11, 145, 17, 0.836);
+}
+.form {
+  margin: 0 auto;
+  visibility: hidden;
+}
+.show_form {
+  visibility: visible;
+}
+.order_form {
+  width: 50%;
+  margin: 0 auto;
+  background:#f5f5fa;
+  border-radius: 12px;
+  padding: 30px 0px 30px 25px;
+}
+.order_form input, .order_form select, .order_form textarea {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #1b1b1b;
+  padding: 15px;
+  margin-right: 8px;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  position: relative;
+}
+.error {
+  border: 2px solid #c91414 !important;
+}
+.order_form select {
+  width: 203px;
+}
+.order_form textarea {
+  width: 90%;
+}
+.message, .message_number {
+  font-size: 20px;
+  color: #c91414;
+  visibility: hidden;
+}
+.show_message {
+  visibility: visible;
+}
+.block {
+  pointer-events: none;
+  background: #ecebeb;
+}
+.orders {
+  text-align: right;
+  margin-right: 20px;
+}
+#orders {
+  background: #32c914;
+
+}
+.list {
+  padding-inline-start: 20px;
+}
+.list li{
+  text-align: left;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1b1b1b;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.orders_block {
+  display: none;
+  margin: 20px;
+}
+.orders_block div {
+  width: 50%;
+  text-align: left;
+  border: 2px solid rgb(155, 152, 152);
+  padding: 10px;
+}
+.orders_show {
+  display: flex;
+}
+.form_none {
+  display: none;
+}
+.homepage {
+  position: absolute;
+  left: 25px;
+  top: 10px;
+}
+.btn_delete {
+  padding: 5px 10px;
+  background: rgb(230, 84, 84);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+
+}

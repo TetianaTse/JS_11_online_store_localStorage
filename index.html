@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+
+  <div class="orders">
+    <button id="orders">My orders</button>
+    <div class="orders_block">
+      <div>
+        <h2>Orders</h2>
+        <ol class="list"></ol>
+      </div>
+      <div class="order_details">
+        <h2>Order details</h2>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="categories"></div>
+    <div class="products"></div>
+    <div class="details"></div>
+  </div>
+  <div class="form">
+    <form name="order_form" class="order_form">
+      <p><label for="date">Date of purchase</label>
+        <input type="date" name="date" class="date" disabled/></p>
+      <p><label for="surname">Enter your full name:</label></p>
+        <input type="text" id="surname" name="surname" placeholder="Your surname" class="field"/>
+        <input type="text" name="name" placeholder="Your first name" class="field"/>
+        <input type="text" name="patronymic" placeholder="Your patronymic" class="field"/>
+      <p><label for="city">Select delivery city:</label></p>
+        <p><select name="city" id="city" class="select field">
+            <option value="0">--select city--</option>
+            <option value="Chernihiv">Chernihiv</option>
+            <option value="Dnipro">Dnipro</option>
+            <option value="Ivano-Frankivsk">Ivano-Frankivsk</option>
+            <option value="Kharkiv">Kharkiv</option>
+            <option value="Kherson">Kherson</option>
+            <option value="Kyiv">Kyiv</option>
+            <option value="Lviv">Lviv</option>
+            <option value="Mykolayiv">Mykolayiv</option>
+            <option value="Odesa">Odesa</option>
+            <option value="Poltava">Poltava</option>
+            <option value="Sumy">Sumy</option>
+            <option value="Uzhhorod">Uzhhorod</option>
+        </select>
+      </p>
+      <label for="department">Enter the department of Nova Poshta:</label>
+        <p><input type="number" id="department" name="department" placeholder="Branch №" class="number field"/>
+
+        <p>Choose a payment method:</p>
+        <input type="radio" name="payment" value="cash" id="cash" checked/>
+        <label for="cash">Cash on delivery</label>
+        <input type="radio" name="payment" value="card" id="card"/>
+        <label for="card">Payment by bank card</label>
+
+      <p><label for="amount">Enter the quantity of the purchased product:</label></p>
+        <p><input type="number" name="amount" id="amount" class="number field"/></p>
+      <label for="comment">Comment on the order:</label>
+        <p><textarea name="comment" placeholder="Your comment" id="comment"></textarea></p>
+
+      <p><button type="button" id="btn-form">Send</button></p>
+      <p class="message">Fill in required fields!</p>
+    </form>
+  </div>
+  <div class="result"></div>
+  
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
